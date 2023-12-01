@@ -1,12 +1,15 @@
-body {
-  font-family: "Arial", sans-serif;
+* {
   margin: 0;
   padding: 0;
-  margin-left: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
 }
 
 p {
-  font-size: 25px;
+  font-size: 1.25em;
   text-align: justify;
 }
 
@@ -17,39 +20,37 @@ p {
   align-items: center;
   background-color: #666;
   color: white;
-  padding: 10px;
+  padding: 1em;
 }
 
 .navbar-left {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 1em;
 }
 
 .navbar-left img {
-  max-width: 100px;
-  margin-top: 0px;
-  width: ;
-  :150px ;
+  max-width: 100%;
+  width: 80px;
 }
 
-.navbar-left H01 {
-  font-size: 30px;
+.navbar-left h1 {
+  font-size: 1.5em;
 }
 
 .navbar-right {
-  font-size: 20px;
+  font-size: 1em;
   cursor: pointer;
 }
 
 .menu-icon {
-  font-size: 50px;
+  font-size: 2.5em;
 }
 
 /* Título con Fondo Rojo */
 .title-container {
   background-color: rgb(30, 48, 80);
-  padding: 20px;
+  padding: 1em;
   text-align: center;
 }
 
@@ -59,7 +60,7 @@ p {
 
 /* Párrafo de Ejemplo */
 .paragraph-container {
-  padding: 20px;
+  padding: 1em;
 }
 
 /* Tarjetas en 2 Columnas */
@@ -70,7 +71,7 @@ p {
 }
 
 .card {
-  width: 30%;
+  width: calc(33.333% - 20px);
   margin: 10px;
   padding: 10px;
   border: 1px solid #ddd;
@@ -82,6 +83,7 @@ p {
 
 .card h2 {
   margin-top: 10px;
+  font-size: 1.5em;
   color: rgb(38, 38, 239);
 }
 
@@ -89,7 +91,7 @@ p {
   color: #000000;
 }
 .icon_card {
-  font-size: 150px !important;
+  font-size: 3em !important;
   color: rgb(30, 48, 80);
 }
 
@@ -99,7 +101,7 @@ p {
 }
 
 .make_container img {
-  width: 1200px !important;
+  max-width: 100%;
 }
 
 .card-container2 {
@@ -109,8 +111,9 @@ p {
 }
 
 .card2 {
+  width: 100%;
   margin: 10px;
-  padding: 15px;
+  padding: 1.5em;
   border-radius: 5px;
   justify-content: center;
   text-align: center;
@@ -119,6 +122,7 @@ p {
 
 .card2 h2 {
   margin-top: 10px;
+  font-size: 1.5em;
   color: rgb(38, 38, 239);
 }
 
@@ -128,7 +132,7 @@ p {
 
 .image_card2 {
   border-radius: 30px;
-  width: 750px !important;
+  max-width: 100%;
 }
 
 .card3 {
@@ -145,7 +149,7 @@ p {
   color: white;
   text-align: center;
   justify-content: center;
-  padding: 20px;
+  padding: 1em;
   box-sizing: border-box;
 }
 
@@ -165,27 +169,25 @@ p {
 }
 
 .container {
-  flex: 1;
   width: 50%;
   margin: auto;
-  padding: 20px;
+  padding: 1em;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 50px;
+  margin-top: 2em;
 }
 
 .map_container {
-  flex: 1;
   justify-content: center;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 2em;
 }
 
 .wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin: 50px;
-  gap: 50px;
+  margin: 2em;
+  gap: 2em;
 }
 
 label {
@@ -197,9 +199,8 @@ input,
 select,
 textarea {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  box-sizing: border-box;
+  padding: 1em;
+  margin-bottom: 1.5em;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
@@ -207,7 +208,7 @@ textarea {
 button {
   background-color: #4caf50;
   color: white;
-  padding: 10px 15px;
+  padding: 1em 1.5em;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -251,7 +252,8 @@ button:hover {
   }
 
   .card2 {
-    max-width: 100%; /* Ocupa el 100% del ancho en dispositivos móviles */
+    width: calc(100% - 20px); /* Ocupa el 100% del ancho en dispositivos móviles con un pequeño margen */
+    margin: 10px; /* Ajusta el margen entre tarjetas en dispositivos móviles */
   }
 
   .image_card2 {
@@ -262,17 +264,17 @@ button:hover {
   .container {
     width: calc(100% - 40px); /* Ocupa el 100% del ancho en dispositivos móviles con un pequeño margen */
     margin: 20px auto; /* Ajusta el margen superior e inferior en dispositivos móviles */
-    padding: 20px; /* Ajusta el espacio interno en dispositivos móviles */
+    padding: 1em; /* Ajusta el espacio interno en dispositivos móviles */
     box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
   }
 
   .map_container {
-    padding-top: 20px; /* Ajusta el espacio superior en dispositivos móviles */
+    padding-top: 1em; /* Ajusta el espacio superior en dispositivos móviles */
   }
 
   .wrapper {
-    margin: 20px; /* Ajusta el margen en dispositivos móviles */
-    gap: 20px; /* Ajusta el espacio entre elementos en dispositivos móviles */
+    margin: 1em; /* Ajusta el margen en dispositivos móviles */
+    gap: 1em; /* Ajusta el espacio entre elementos en dispositivos móviles */
   }
 
   /* Ajustes para el mapa y el formulario uno debajo del otro */
