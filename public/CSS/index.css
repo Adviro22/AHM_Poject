@@ -216,8 +216,8 @@ button:hover {
   background-color: #45a049;
 }
 
-/* Estilos para dispositivos móviles */
-@media (max-width: 768px) {
+/* Estilos para dispositivos móviles a partir de 900px */
+@media (max-width: 880px) {
   .navbar-left img {
     width: 80%; /* Ajusta el ancho de la imagen en dispositivos móviles */
   }
@@ -236,7 +236,8 @@ button:hover {
   }
 
   .card {
-    width: 100%; /* Ocupa el 100% del ancho en dispositivos móviles */
+    width: calc(100% - 20px); /* Ocupa el 100% del ancho en dispositivos móviles con un pequeño margen */
+    margin: 10px; /* Ajusta el margen entre tarjetas en dispositivos móviles */
   }
 
   .make_container {
@@ -258,8 +259,10 @@ button:hover {
   }
 
   .container {
-    width: 100%; /* Ocupa el 100% del ancho en dispositivos móviles */
-    margin-top: 20px; /* Ajusta el margen superior en dispositivos móviles */
+    width: calc(100% - 40px); /* Ocupa el 100% del ancho en dispositivos móviles con un pequeño margen */
+    margin: 20px auto; /* Ajusta el margen superior e inferior en dispositivos móviles */
+    padding: 20px; /* Ajusta el espacio interno en dispositivos móviles */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
   }
 
   .map_container {
@@ -269,5 +272,11 @@ button:hover {
   .wrapper {
     margin: 20px; /* Ajusta el margen en dispositivos móviles */
     gap: 20px; /* Ajusta el espacio entre elementos en dispositivos móviles */
+  }
+
+  /* Ajustes para el mapa y el formulario uno debajo del otro */
+  .map_container,
+  .container {
+    width: 100%; /* Ocupa el 100% del ancho en dispositivos móviles */
   }
 }
