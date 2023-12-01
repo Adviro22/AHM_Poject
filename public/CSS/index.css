@@ -225,11 +225,12 @@ button:hover {
   }
 
   .navbar-left h1 {
-    font-size: 1.5em; /* Ajusta el tamaño del texto del título en dispositivos móviles */
+    font-size: 1.2em; /* Ajusta el tamaño del texto del título en dispositivos móviles */
   }
 
   .menu-icon {
-    font-size: 30px; /* Ajusta el tamaño del ícono del menú en dispositivos móviles */
+    font-size: 25px; /* Ajusta el tamaño del ícono del menú en dispositivos móviles */
+    margin-right: 5px; /* Agrega un espacio entre el icono y el texto */
   }
 
   /* Ajustes para el contenedor de las tarjetas */
@@ -270,6 +271,8 @@ button:hover {
 
   .map_container {
     padding-top: 1em; /* Ajusta el espacio superior en dispositivos móviles */
+    max-width: 100%; /* Hace que el mapa no exceda el ancho de la pantalla */
+    overflow: hidden; /* Evita que el mapa se salga de la pantalla */
   }
 
   .wrapper {
