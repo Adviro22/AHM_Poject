@@ -6,6 +6,12 @@
 
 body {
   font-family: "Arial", sans-serif;
+  margin: 0;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 p {
@@ -61,6 +67,11 @@ p {
 /* Párrafo de Ejemplo */
 .paragraph-container {
   padding: 1em;
+}
+
+.paragraph-container h2 {
+  color: blue !important;
+  text-align: center;
 }
 
 /* Tarjetas en 2 Columnas */
@@ -124,7 +135,6 @@ p {
   margin-top: 10px;
   font-size: 1.5em;
   color: rgb(38, 38, 239);
-  
 }
 
 .card2 p {
@@ -223,6 +233,16 @@ button:hover {
 
 /* Estilos para dispositivos móviles a partir de 900px */
 @media (max-width: 880px) {
+
+  body{
+    margin: 0;
+  }
+
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }|
+
   .navbar-left img {
     width: 80%; /* Ajusta el ancho de la imagen en dispositivos móviles */
   }
@@ -242,7 +262,9 @@ button:hover {
   }
 
   .card {
-    width: calc(100% - 20px); /* Ocupa el 100% del ancho en dispositivos móviles con un pequeño margen */
+    width: calc(
+      100% - 20px
+    ); /* Ocupa el 100% del ancho en dispositivos móviles con un pequeño margen */
     margin: 10px; /* Ajusta el margen entre tarjetas en dispositivos móviles */
   }
 
@@ -256,7 +278,16 @@ button:hover {
   }
 
   .card2 {
-    width: calc(100% - 20px); /* Ocupa el 100% del ancho en dispositivos móviles con un pequeño margen */
+    width: calc(
+      100% - 20px
+    ); /* Ocupa el 100% del ancho en dispositivos móviles con un pequeño margen */
+    margin: 10px; /* Ajusta el margen entre tarjetas en dispositivos móviles */
+  }
+
+  .card2.card3 {
+    width: calc(
+      100% - 20px
+    ); /* Ocupa el 100% del ancho en dispositivos móviles con un pequeño margen */
     margin: 10px; /* Ajusta el margen entre tarjetas en dispositivos móviles */
   }
 
@@ -266,7 +297,9 @@ button:hover {
   }
 
   .container {
-    width: calc(100% - 40px); /* Ocupa el 100% del ancho en dispositivos móviles con un pequeño margen */
+    width: calc(
+      100% - 40px
+    ); /* Ocupa el 100% del ancho en dispositivos móviles con un pequeño margen */
     margin: 20px auto; /* Ajusta el margen superior e inferior en dispositivos móviles */
     padding: 1em; /* Ajusta el espacio interno en dispositivos móviles */
     box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
