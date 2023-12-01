@@ -1,0 +1,222 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 25px;
+  text-align: justify;
+}
+
+/* Barra de Navegación */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #666;
+  color: white;
+  padding: 10px;
+}
+
+.navbar-left{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar-left img {
+  max-width: 100px;
+  margin-top: 0px;
+  width: ;: 150px;
+}
+
+.navbar-left H01 {
+  font-size: 30px;
+}
+
+.navbar-right {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.menu-icon {
+  font-size: 50px;
+}
+
+/* Título con Fondo Rojo */
+.title-container {
+  background-color: rgb(30, 48, 80);
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  color: white;
+}
+
+/* Párrafo de Ejemplo */
+.paragraph-container {
+  padding: 20px;
+}
+
+/* Tarjetas en 2 Columnas */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  justify-content: center;
+  text-align: center;
+  background-color: #c9c9c9;
+}
+
+.card h2 {
+  margin-top: 10px;
+  color: rgb(38, 38, 239);
+}
+
+.card p {
+  color: #000000;
+}
+.icon_card {
+  font-size: 150px !important;
+  color: rgb(30, 48, 80);
+}
+
+.make_container {
+  justify-content: center;
+  text-align: center;
+}
+
+.make_container img {
+  width: 1200px !important;
+}
+
+.card-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card2 {
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.card2 h2 {
+  margin-top: 10px;
+  color: rgb(38, 38, 239);
+}
+
+.card2 p {
+  color: #000000;
+}
+
+.image_card2 {
+  border-radius: 30px;
+  width: 750px !important;
+}
+
+.card3 {
+  max-width: 55%;
+}
+
+.full-width-text {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-image: url("../IMG/maquinaria-amarilla.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.full-width-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 249, 0.394);
+}
+
+.full-width-text p {
+  z-index: 1;
+  position: relative;
+}
+
+.container {
+  flex: 1;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+.map_container {
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+  gap: 50px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
