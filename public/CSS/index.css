@@ -19,7 +19,7 @@ p {
   padding: 10px;
 }
 
-.navbar-left{
+.navbar-left {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -28,7 +28,8 @@ p {
 .navbar-left img {
   max-width: 100px;
   margin-top: 0px;
-  width: ;: 150px;
+  width: ;
+  :150px ;
 }
 
 .navbar-left H01 {
@@ -215,8 +216,58 @@ button:hover {
   background-color: #45a049;
 }
 
+/* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
+  .navbar-left img {
+    width: 80%; /* Ajusta el ancho de la imagen en dispositivos móviles */
+  }
+
+  .navbar-left h1 {
+    font-size: 1.5em; /* Ajusta el tamaño del texto del título en dispositivos móviles */
+  }
+
+  .menu-icon {
+    font-size: 30px; /* Ajusta el tamaño del ícono del menú en dispositivos móviles */
+  }
+
+  /* Ajustes para el contenedor de las tarjetas */
+  .card-container {
+    flex-direction: column; /* Cambia a diseño de columna en dispositivos móviles */
+  }
+
+  .card {
+    width: 100%; /* Ocupa el 100% del ancho en dispositivos móviles */
+  }
+
+  .make_container {
+    text-align: center;
+  }
+
+  .make_container img {
+    max-width: 100%; /* Hace que la imagen se ajuste al ancho del contenedor en dispositivos móviles */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+  }
+
+  .card2 {
+    max-width: 100%; /* Ocupa el 100% del ancho en dispositivos móviles */
+  }
+
+  .image_card2 {
+    width: 100%; /* Ocupa el 100% del ancho en dispositivos móviles */
+    border-radius: 0; /* Elimina el redondeo de las esquinas en dispositivos móviles */
+  }
+
+  .container {
+    width: 100%; /* Ocupa el 100% del ancho en dispositivos móviles */
+    margin-top: 20px; /* Ajusta el margen superior en dispositivos móviles */
+  }
+
+  .map_container {
+    padding-top: 20px; /* Ajusta el espacio superior en dispositivos móviles */
+  }
+
   .wrapper {
-    flex-direction: column;
+    margin: 20px; /* Ajusta el margen en dispositivos móviles */
+    gap: 20px; /* Ajusta el espacio entre elementos en dispositivos móviles */
   }
 }
