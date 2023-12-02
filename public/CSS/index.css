@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  justify-content: center;
 }
 
 body {
@@ -17,7 +16,7 @@ html, body {
 
 p {
   font-size: 1.25em;
-  text-align: justify;
+  word-spacing: normal;
 }
 
 /* Barra de Navegación */
@@ -71,7 +70,7 @@ p {
 }
 
 .paragraph-container p{
-  justify-content: center;
+  text-align: justify;
 }
 
 .paragraph-container h2 {
@@ -165,7 +164,7 @@ p {
   background-size: cover;
   background-position: center;
   color: white;
-  text-align: center;
+  text-align: left;
   justify-content: center;
   padding: 1em;
   box-sizing: border-box;
