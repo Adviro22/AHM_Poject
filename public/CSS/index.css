@@ -200,6 +200,11 @@ p {
   padding-top: 2em;
 }
 
+.Informacion_contacto{
+  justify-content: center;
+  text-align: center;
+}
+
 .wrapper {
   display: flex;
   flex-wrap: wrap;
